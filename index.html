@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Polyglot AI Chatbot</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>🎧 Polyglot AI Chatbot</h1>
+    <p style="color:#666;margin-top:-10px;">Ask me anything!</p>
+
+    <div class="input-group">
+      <input id="question" placeholder="Type or speak..." onkeypress="handleKeyPress(event)">
+      <button id="sendBtn" onclick="sendQuestion()">Send</button>
+      <button id="micBtn" onclick="toggleRecording()">🎤 Speak</button>
+    </div>
+
+    <div id="status" class="status"></div>
+    <div id="answer"></div>
+    <div id="debug" class="debug"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
